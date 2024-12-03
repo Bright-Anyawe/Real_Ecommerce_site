@@ -8,6 +8,7 @@ const authRoutes = require("./routes/auth");
 app.use("/api/products", productRoutes);
 app.use("/api/auth", authRoutes);
 
+
 const app = express();
 app.use(express.json());
 app.use(cors());
