@@ -4,6 +4,8 @@ const API_URL = "http://localhost:5000/api";
 
 export const fetchProducts = async () => {
   const response = await axios.get(`${API_URL}/products`);
+  console.log(response.data); // Log the response to check the data
+
   return response.data;
 };
 

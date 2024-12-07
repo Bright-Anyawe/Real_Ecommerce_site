@@ -1,0 +1,10 @@
+
+
+export const registerUser = async (username, password, email) => {
+  const response = await axios.post(`${API_URL}/auth/register`, {
+    username,
+    password,
+    email,
+  });
+  return response.data;
+};
